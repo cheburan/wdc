@@ -1,11 +1,12 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Create T3 App</title>
+        <title>WDC</title>
         <meta
           name="description"
           content="The Women’s Development Centre (WDC)"
@@ -19,7 +20,7 @@ const Home: NextPage = () => {
             Centre
           </h1>
           <h3 className="text-3xl font-extrabold tracking-tight text-[hsl(210,1%,27%)] sm:text-[3rem]">
-            Web-Site is under development
+            This website is under construction to bring you a better experience.
           </h3>
           <div className="container m-3 flex w-full flex-col items-center justify-center p-4 ">
             <div className="m-4 flex min-w-full flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20">
@@ -44,6 +45,11 @@ const Home: NextPage = () => {
                 to challenge social injustices affecting women and children
               </div>
             </div>
+            <div className="m-4 flex min-w-full flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20">
+              <h3 className="text-2xl font-bold">Latest updates →</h3>
+              <div className="text-lg">Until we are back, check our Facebook page for the latest updates</div>
+              <Link target={"_blank"} href={"https://www.facebook.com/womendev.org"}>https://www.facebook.com/womendev.org</Link>
+              </div>
             <div className="m-4 flex min-w-full flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20">
               <h3 className="text-2xl font-bold">Contact Us →</h3>
               <div className="text-lg">Women’s development centre 61</div>
